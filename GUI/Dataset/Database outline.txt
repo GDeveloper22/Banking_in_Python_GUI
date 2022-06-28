@@ -1,0 +1,21 @@
+Database in raspberrypi (MariaDB)
+
+Database permission- Owner(u) 7(rwx), group(g) 4(r--), Other(o) 4(r--)
+create new user and provide permissions for database
+setup mariaDB
+make a new userid for accessing the putty
+dont allow the use of sudo.
+connect the maria DB using the user.
+send the data and receive data
+display it acordingly to the gui labels and frames.
+
+
+On raspberrry
+if there is error in connecting then change the bind addres to 0.0.0.0 of host address which 
+will give permission to remote access 
+'nano /etc/mysql/mariadb.conf.d/50-server.cnf'
+
+now if there is access denied for your pc to connect to database then
+in the database of root user execute the query
+"GRANT ALL ON *.* TO 'bankdata'@'192.168.2.17' IDENTIFIED BY 'Banking';"
+192.168.2.17-> my ip address

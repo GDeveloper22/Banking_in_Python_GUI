@@ -1,0 +1,81 @@
+Write any message in the uppercase format usin toupper() function.
+
+First show the welcome screen then, display the menu 
+which shows different options like 
+01). New Account
+02). Deposit amount
+03). Withdraw amount
+04). Balance Enquiry
+05). All Account Holder list
+06). Close an account
+07). Modify An account
+08). Exit
+then it will ask for the options and if the user select
+if 
+1 => each statement is in the try loop. (make different function of each)
+ask for first name(apply the condition like it Should have only letters, else ask again), 
+middle name(apply the condition like it Should have only letters, else ask again),
+last name(apply the condition like it Should have only letters, else ask again),
+age(apply the condition like it Should have only number also, the age should be >0 and <100 else ask again),
+gender(check weather it contains any number. Also, check if the gender is other than F, M or O then ask again),
+initial deposit Min of $1., email, phone number, date of birth, type of acc, set 4 digit pin to access account. Then show the user all values and ask to confirm. If any of the information is false, then ask which information would like to change like 
+1 first name
+2 middle name
+3 last name
+4 age
+5 gender
+6 email
+7 phone number
+8 dob
+9 type of acc
+10 initial deposit.
+11 user access pin
+12 employment status
+13 Account Status
+# after that print statement which will ask for the user to accept the Terms and Conditions for opening an account with swiss bank. If y== store the details in the excel and print message which shows that we are reviewing your account.
+
+and then ask again to enter the value and show the summary and add it to the excel database.
+
+
+2 => ask account number, phone number, amount to deposit, user pin, check the account status if it is active procced, else show message that "the account is inactive, please contact support."
+then confirm details. and add the amount to account. add it to the account activity and update the current balance.
+
+
+3 =>  ask account number, phone number, amount to Withdraw, user pin, check the account status if it is active procced, else show message that "the account is inactive, please contact support." confirm details. and deduct the amount from the account and add the activity to the account activity, update the current balance.
+
+
+4 =>  ask account number, name, phone number,user pin then show details, update the current balance.
+
+5 => First ask for the account number, (only 2 people have acces to it manager and owner), if these 2 account number are in the authorisation list then ask for bank security pin(8 digit), then ask name for authorization(secret phrase 4 word), then show all the details.
+
+6=> Ask for account number, name, phonenumber, email, user pin. show details for confirmation and display that your request is under process, you will get response in 3-4 business days. If the account is already been closed or there is not account under that account number then display message that the user doesn't exist(or the account is closed).
+
+
+7 => Ask for current account number, phone number, email, date of birth and 4 digit access pinfor verification and then if details are correct then display the menu to change 
+1 first name
+2 middle name
+3 last name
+4 age
+5 gender
+6 email
+7 phone number
+8 dob
+9 type of acc
+10 initial deposit.
+11 Employment Status
+12 user access pin
+13 account status.
+
+also store the name and common variable in to a different namespace as it is global so we can use in different function. also, to change the values of user in the modifyacc function, this variables valued can be changed.
+
+
+make a random function which will choose a random 7 digit number for the user, before that it will extract the old user and remove that from the possible random numbers.
+
+make functions for the account activity. like for deposit, withdrawal.
+
+
+make new header files and c++ files for storing the function prototype and functions in its helper c++ files.
+
+for any kind of detail or option we will ask user to enter account number, phone number, access pin, if these 3 things are correct then user can access the data.
+
+if the account status is inactive then deposit or withdrawal proceess can't be acessed.

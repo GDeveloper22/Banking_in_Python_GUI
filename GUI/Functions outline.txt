@@ -1,0 +1,70 @@
+Create columns in the table records (try with the python or else direct to the phpmyadmin)
+
+Include last login column with time,
+Also add in the activity colum
+
+After creating columns.
+
+Declare class variable which will store the current user id, there will be another class variable which will show if it is manager or not.
+
+If not manager then account holder list will be hidden.
+
+
+1 login screen
+When logging in it will run the login function which will extract the account number corresponding to that password. If they both matched then it will store in the class variables, and it will store the row in which it is found, also check if the account is active.
+
+Now it will compare it with the values in the entry box
+YES======if found then it will redirect to home page.
+
+No== popup will be shown that user doesnt exist.
+
+
+2 home screen
+In home screen it will show the  data about that user.
+
+
+3
+Deposit window
+In that check if the value is number and only positive then deposit in the account, add in the history and update the root.
+
+
+4
+Withdrawal window
+In that check if the value is number and positive then popup window, to ask pin and if pin is ok then show withdrawal message and deduct from the account, add in the history and update the root.
+
+
+
+5 acc holder list (only to admin)
+Show the accounts of all user with number, name, current balance, account status, email, phone number.
+
+
+6
+Close account
+Ask for pin, if correct change the account status to inactive, and logout from user and redirect to the login screen.
+
+7
+Modification window
+Popup the message box which will ask to write corresponding value and then check if the value satisfies the conditions lile if it is number, letters or anything. Then change the value in the database and update the root and if close modification is pressed then it will destroy the modification window and return back to the home root.
+
+
+8
+Help button
+Pop up message box and it will show contact support at "swizzbank@gmail.ca". When ok is pressed it will
+Destroy the popup and redirect to the home root.
+
+9 Logout button
+Change the user status to the logged out and destroy the home root window. Also, it will redirect to the login window.
+
+10. Register button.
+Destory the login root, open the register window, and when register is pressed then it will check the values and displays the registration successful. Redirect to the login window, and updates the database.
+
+
+Make a update function which will get the new data and update the root.
+
+Add a column of last login which shows time, date of login and
+current login status column which shows if currently user is logged in or not.
+
+
+In every step it will do logging like register button pressed, then it will log in the file.
+
+After that when connecting to database it will also log it in the file, with the connection time to connect to the database.
