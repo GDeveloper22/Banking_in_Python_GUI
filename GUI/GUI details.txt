@@ -1,0 +1,28 @@
+first it will have login window or register window
+
+if new user then pop up the register window
+else logged in correctly then it will open the corresponding account and then pop up the window with ...
+menubar with help button
+shows name of account number, account name and al of the details
+deposit window
+withdrawal window
+list of account window. (for root user)
+balance sheet
+account activity window
+logout button (after logging out button it will restart again)
+close account button - opens new window (and no other tkinter window will be operatable until the operation is cancelled or completed)
+modify account button - opens new window(and no other tkinter window will be operatable until the operation is cancelled or completed)
+
+after every step it will update the root by extracting the data from database
+
+the tkinter will display the loading symbol until data is being fetched.
+
+if there is an data integration error then it will show server down message on screen by poping error message.
+
+override the close button like when close button is pressed in tkinter then it will show the message like "Are you sure you want to log off".
+also, when it is in any operations like modifying account, creating account, closing account then it will show the message accordingly.
+
+or else hide or disable the close button.
+all the root windows are unexpandable.
+
+win, tab, function, ctrl, alt, esc key are blocked.

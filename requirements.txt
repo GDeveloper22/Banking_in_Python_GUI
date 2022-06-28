@@ -1,0 +1,14 @@
+These are the following modules which are needed to run the code.
+datetime
+time
+random
+MySQLdb
+tkinter
+os
+threading
+pytz
+PIL
+messagebox
+Pillow
+mysqlclient
+keyboard~=0.13.5

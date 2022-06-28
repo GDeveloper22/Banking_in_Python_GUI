@@ -1,13 +1,16 @@
-# Banking_in_Python_GUI
-GUI based banking app
+# Banking_in_python_GUI
+GUI based Banking app
 
 Hello buddies!!
 
-I have uploaded the console based banking in python program, now I have made the GUI version of it. Here you will be able to get new features but on graphical basis.
+I have uploaded the console based banking in python program, now I have made the GUI version of it.
+Here you will be able to get new features but on graphical basis. 
 
-All of the data is stored in the backend means database. I have created and tested the database. For the project I have used SQL version of the database.
+All of the data is stored in the backend means database.
+I have created and tested the database. For the project I have used SQL version of the database.
 
-Also, the required modules which I have used in the project is mentioned in he requirements.txt. Furthermore, if you wat the rough idea of the whole project, then you can get it from outline.txt
+Also, the required modules which I have used in the project is mentioned in he requirements.txt. 
+Furthermore, if you wat the rough idea of the whole project, then you can get it from outline.txt
 
 Whole code is divided in different functions and it is free to use....
 
