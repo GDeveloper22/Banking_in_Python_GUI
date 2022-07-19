@@ -14,11 +14,15 @@ class Dataset:
         self.mydb = ""
         self.s = 0
         self.e = 0
+        self.c = 0
         self.data = None
         self.insert_rec = None
         self.database_conn()
 
     def database_conn(self):
+        if self.c == 3:
+                messagebox.showerror(title="Connection timeout", message="Maximum tries reachedout+\n Please try after sometime...")
+                exit()
         self.s = time.time()
         try:
             self.mydb = Sql.connect(self.host, self.user, self.password, self.data_base, connect_timeout=3)
@@ -30,6 +34,7 @@ class Dataset:
         except Exception as e:
             print('Failed...', e)
             messagebox.showerror(title="Connection Error", message="DATABASE CONNECTION ERROR\n PLEASE TRY AGAIN...")
+            self.c += 1
             return self.database_conn()
 
     def colum_set(self):
